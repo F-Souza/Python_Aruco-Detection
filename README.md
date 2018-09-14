@@ -24,7 +24,9 @@
         
         parameters =  aruco.DetectorParameters_create()
 
-      # E apartir disso, pegamos os cantos (corners) da Aruco Mark detectada e  os _ids e rejectedImgPoints_ que podem ser ignorados por enquanto. Por agora, importante mesmo só a corners, porque ela é quem vai nos retornar a posição dos cantos da Aruco Mark na imagem.
+      # E apartir disso, pegamos os cantos (corners) da Aruco Mark detectada e  os _ids e rejectedImgPoints_ que 
+      podem ser ignorados por enquanto. Por agora, importante mesmo só a corners, porque ela é quem vai nos 
+      retornar a posição dos cantos da Aruco Mark na imagem.
 
         corners, ids, rejectedImgPoints = aruco.detectMarkers(frame, aruco_dict, parameters=parameters)
         
